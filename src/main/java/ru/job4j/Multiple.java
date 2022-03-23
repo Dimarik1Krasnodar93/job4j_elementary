@@ -5,6 +5,7 @@ public class Multiple {
         for (int i = 1; i <= 9; i++) {
             System.out.println("1*" + i + "=" + i);
         }
+
     }
 
 }
