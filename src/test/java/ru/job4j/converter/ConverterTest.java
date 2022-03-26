@@ -38,7 +38,7 @@ public class ConverterTest {
     @Test
     public void whenConvert5DollarsThen300Rub() {
         float in = 5;
-        float expected = 30;
+        float expected = 300;
         float out = Converter.dollarToRuble(in);
         float eps = 0.0001f;
         Assert.assertEquals(expected, out, eps);
