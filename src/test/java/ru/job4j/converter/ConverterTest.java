@@ -41,6 +41,7 @@ public class ConverterTest {
         float expected = 300;
         float out = Converter.dollarToRuble(in);
         float eps = 0.0001f;
+
         Assert.assertEquals(expected, out, eps);
     }
 }
