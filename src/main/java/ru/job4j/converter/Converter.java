@@ -32,7 +32,7 @@ public class Converter {
         float expected2 = 2;
         float out2 = Converter.rubleToDollar(in2);
         passed = expected2 == out2;
-        System.out.println("120 rubles are 2 dollars. Test result : " + passed);
+        System.out.println("120 rubles are 2 dollars. Test result: " + passed);
 
         float in3 = 4;
         float expected3 = 280;
