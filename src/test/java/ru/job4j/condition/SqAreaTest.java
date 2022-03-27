@@ -24,4 +24,22 @@ public class SqAreaTest {
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void whenP6K10Square0p74() {
+        double expected = 0.74;
+        int p = 6;
+        double k = 10;
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
+    }
+
+    @Test
+    public void whenP1K20Square0p01() {
+        double expected = 0.01;
+        int p = 1;
+        double k = 20;
+        double out = SqArea.square(p, k);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
