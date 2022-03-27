@@ -26,3 +26,4 @@ public class MathCalculator {
         System.out.println("Результат :расчета равен (4 операции) " + totalSumm(10, 20));
     }
 }
+
