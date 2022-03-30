@@ -11,7 +11,7 @@ public class FitnessTest {
     public void calcTest10Nik30() {
         int ivan = 10;
         int nik = 50;
-        int expected = 3;
+        int expected = 4;
         int result = Fitness.calc(ivan, nik);
 
         Assert.assertEquals(expected, result);
