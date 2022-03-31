@@ -22,4 +22,12 @@ public class CheckPrimeNumberTest {
         boolean expected = false;
         Assert.assertEquals(result, expected);
     }
+
+    @Test
+    public void check32() {
+        int num = 32;
+        boolean result = CheckPrimeNumber.check(10);
+        boolean expected = false;
+        Assert.assertEquals(result, expected);
+    }
 }
