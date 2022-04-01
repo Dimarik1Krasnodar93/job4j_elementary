@@ -15,9 +15,6 @@ public class FindLoop {
     public static int indexInRange(int[] data, int el, int start, int finish) {
 
         for (int i = start; i <= finish; i++) {
-            if (finish >= data.length) {
-                return -1;
-            }
             if (data[i] == el) {
                 return i;
             }
