@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Machine {
     public static int[] change(int money, int price) {
-
         int[] rsl = new int[100];
         int size = 0;
         money -= price;
