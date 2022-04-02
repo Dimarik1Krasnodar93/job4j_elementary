@@ -9,7 +9,7 @@ public class Defragment {
                     if (array[i] != null) {
                         String temp = array[index];
                         array[index] = array[i];
-                        array[i] = temp;
+                        array[i] = null;
                         break;
                     }
                 }
