@@ -7,25 +7,19 @@ public class Machine {
         int[] rsl = new int[100];
         int size = 0;
         money -= price;
-        int div10 = money / 10;
-        int div5 = (money - div10 * 10) / 5;
-        int div2 = (money - div10 * 10 - div5 * 5)  / 2;
-        int div1 = money - div10 * 10 - div5 * 5 -  div2 * 2;
-        for (int i = 0; i < div10; i++) {
-            rsl[i] = 10;
-            size++;
-        }
-        for (int i = 0; i < div5; i++) {
-            rsl[size] = 5;
-            size++;
-        }
-        for (int i = 0; i < div2; i++) {
-            rsl[size] = 2;
-            size++;
-        }
-        for (int i = 0; i < div1; i++) {
-            rsl[size] = 1;
-            size++;
+        int[] coins = {10, 5, 2, 1};
+        int sumCoins = 0;
+        for (int coin:coins
+             ) {
+            int temp = (money - sumCoins) / coin;
+            sumCoins += temp * coin;
+            for (int i = 0; i < temp; i++) {
+                rsl[size] = coin;
+                size++;
+            }
+            if (sumCoins == money) {
+                break;
+            }
         }
         return Arrays.copyOf(rsl, size);
     }
