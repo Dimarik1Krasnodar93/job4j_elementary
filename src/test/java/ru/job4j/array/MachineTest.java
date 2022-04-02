@@ -18,6 +18,7 @@ public class MachineTest {
 
     @Test
     public void when50by35() {
+
         int money = 50;
         int price = 35;
         int[] result = Machine.change(money, price);
