@@ -11,15 +11,12 @@ public class Machine {
         int sumCoins = 0;
         for (int coin:coins
              ) {
-            int temp = (money - sumCoins) / coin;
-            sumCoins += temp * coin;
-            for (int i = 0; i < temp; i++) {
-                rsl[size] = coin;
-                size++;
-            }
-            if (sumCoins == money) {
-                break;
-            }
+          while (money >= coin) {
+              money -= coin;
+              rsl[size] = coin;
+              size++;
+          }
+
         }
         return Arrays.copyOf(rsl, size);
     }
