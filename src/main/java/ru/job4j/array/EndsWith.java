@@ -10,7 +10,6 @@ public class EndsWith {
                 return false;
             }
         }
-        
         return true;
     }
 }

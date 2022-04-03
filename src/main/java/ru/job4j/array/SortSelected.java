@@ -9,7 +9,6 @@ public class SortSelected {
             int index = FindLoop.indexInRange(data, result[i], i, data.length - 1);
             SwitchArray.swap(data, i, index);
         }
-
         return result;
     }
 
