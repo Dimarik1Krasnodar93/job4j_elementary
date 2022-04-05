@@ -17,7 +17,7 @@ public class Battery {
     }
 
     public void exchange(Battery another) {
-        another.addLoad(this.load);
+        another = new Battery(another.getLoad() + this.load);
         this.load = 0;
     }
 }
